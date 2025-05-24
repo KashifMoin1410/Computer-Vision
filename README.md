@@ -32,10 +32,16 @@ To implement and compare traditional computer vision techniques with deep learni
 
 The comparative analysis revealed that while traditional methods are computationally less intensive and easier to interpret, they often fall short in accuracy compared to deep learning models. The enhanced ResNet model demonstrated superior performance in classifying complex images, albeit at the cost of higher computational resources and longer training times.
 
-| Approach | Accuracy | Precision | Recall | F1-Score |
+| Approach | Accuracy | Macro Precision | Macro Recall | Macro F1-Score |
 | ----- | ----- | ----- | ----- | ----- |
-| Traditional (SVM \+ kNN) | 65% | 65% | 65% | 65% |
-| Enhanced ResNet | **98%** | **98%** | **98%** | **98%** |
+| Traditional (BoW \+ SVM) | 53.4% | 0.533 | 0.533 | 0.533 |
+| ResNet-style CNN | 91.2% | 0.912 | 0.912 | 0.912 |
+
+* **Traditional (BoW \+ SVM)**: Bag-of-Visual-Words pipeline using Dense SIFT features, MiniBatchKMeans clustering, TF-IDF normalization, and RBF SVM.
+
+* **ResNet-style CNN**: Custom convolutional neural network with SE blocks, MixUp augmentation, and label smoothing.
+
+*The deep learning approach dramatically outperforms the traditional pipeline across all metrics, confirming the superiority of modern CNN architectures for image classification tasks on CIFAR-10.*
 
 ## **Dependencies**
 
