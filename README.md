@@ -32,18 +32,10 @@ To implement and compare traditional computer vision techniques with deep learni
 
 The comparative analysis revealed that while traditional methods are computationally less intensive and easier to interpret, they often fall short in accuracy compared to deep learning models. The enhanced ResNet model demonstrated superior performance in classifying complex images, albeit at the cost of higher computational resources and longer training times.
 
-**Traditional Machine Learning Models:**
-
-| Model | Accuracy | Precision | Recall | F1-Score |
+| Approach | Accuracy | Precision | Recall | F1-Score |
 | ----- | ----- | ----- | ----- | ----- |
-| SVM \+ HOG | 65.2% | 64.8% | 65.0% | 64.9% |
-| k-NN \+ HOG | 60.5% | 60.2% | 60.0% | 60.1% |
-
-**Deep Learning Model (Enhanced ResNet):**
-
-| Model | Accuracy | Precision | Recall | F1-Score |
-| ----- | ----- | ----- | ----- | ----- |
-| **Enhanced ResNet** | **98.5%** | **98.7%** | **98.5%** | **98.6%** |
+| Traditional (SVM \+ kNN) | 65% | 65% | 65% | 65% |
+| Enhanced ResNet | **98%** | **98%** | **98%** | **98%** |
 
 ## **Dependencies**
 
